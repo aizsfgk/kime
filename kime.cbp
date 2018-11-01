@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="kime"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/zhangshifeng01/CLionProjects/kime"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/zhangshifeng01/CLionProjects/kime"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/zhangshifeng01/CLionProjects/kime"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="kime">
+				<Option output="/Users/zhangshifeng01/CLionProjects/kime/kime" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhangshifeng01/CLionProjects/kime"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 kime"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="kime/fast">
+				<Option output="/Users/zhangshifeng01/CLionProjects/kime/kime" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhangshifeng01/CLionProjects/kime"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 kime/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/zhangshifeng01/CLionProjects/kime/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/dict.c">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/dict.h">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/http.c">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/http.h">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/http_server.c">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/http_server.h">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/ioloop.c">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/ioloop.h">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/kime.c">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/log.c">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/log.h">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/mod_static.c">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/mod_static.h">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/murmurhash2.c">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/murmurhash2.h">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/option.c">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/option.h">
+			<Option target="kime"/>
+		</Unit>
+		<Unit filename="/Users/zhangshifeng01/CLionProjects/kime/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

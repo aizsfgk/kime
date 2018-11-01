@@ -1,0 +1,7 @@
+.idea
+*.o
+kime
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+test
