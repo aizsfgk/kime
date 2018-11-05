@@ -6,7 +6,10 @@
 #include "log.h"
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
 #include <stdio.h>
+
+extern char *optarg;
 
 #define DEFAULT_CONF "./server.conf"
 
@@ -24,6 +27,8 @@ opt_t *init_opts(int argc, char *argv[])
 
     /*
         getopt系统调用
+
+        -r 和 -t 不能同时
      */
     while ((opt_id = getopt(argc, argv, "c:p:r:t")) != -1) {
         switch(opt_id) {

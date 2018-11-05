@@ -21,7 +21,7 @@ typedef int (*handler_func)(request_t *request, response_t *response, handler_ct
 
 typedef enum _server_state {
     SERVER_INIT = 0,   // 初始化
-     SERVER_RUNNING,   // 运行中
+    SERVER_RUNNING,    // 运行中
     SERVER_STOPPED     // 已停止
 } server_state;
 
@@ -36,13 +36,18 @@ struct _server {
     ioloop_t *ioloop;    // 事件循环
     server_state state;  // 服务器状态
     int loglevel;        // 日志级别
+    char *logfile;      // 日志文件
+    int daemonize;       // 是否事精灵进程
 
     handler_func handler;// 句柄函数
     void *handler_conf;  // 配置
+
 };
 
 
 server_t* create_simple_server(opt_t *);
 server_t* create_server(opt_t *);
+
+
 
 #endif //KIME_HTTP_H

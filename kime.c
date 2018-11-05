@@ -1,7 +1,10 @@
 #include "option.h"
 #include "http.h"
+#include "log.h"
+#include "http_server.h"
 #include "mod_static.h"
 #include "dict.h"
+#include "site.h"
 
 #include <stdio.h>
 
@@ -30,14 +33,18 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    /*
+    // 只有有配置文件后，才能使用这个选项
     if (option->is_conf_test) {
         print_conf_detail(server);
         return 0;
     }
+    */
 
     /*
      * 启动服务器
      */
+    server_start(server);
 
 
     /*
@@ -46,12 +53,4 @@ int main(int argc, char *argv[])
     
     free(option);
     return 0;
-}
-
-static void print_conf_detail(server_t *server)
-{
-    int i;
-    site_t *site;
-    location_t *loc;
-    site_conf_t *site_conf = (site_conf_t *) server->handler_conf;
 }
