@@ -38,6 +38,7 @@ struct _server {
     int loglevel;        // 日志级别
     char *logfile;      // 日志文件
     int daemonize;       // 是否事精灵进程
+    int listen_fd;
 
     handler_func handler;// 句柄函数
     void *handler_conf;  // 配置
@@ -47,6 +48,10 @@ struct _server {
 
 server_t* create_simple_server(opt_t *);
 server_t* create_server(opt_t *);
+
+request_t *request_create(conn);
+response_t *response_create(conn);
+handler_ctx_t *context_create();
 
 
 

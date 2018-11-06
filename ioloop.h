@@ -45,6 +45,10 @@ enum IOLOOP_STATES {
 
 
 ioloop_t    *ioloop_create(unsigned int maxfds);
+int ioloop_add_handler(ioloop_t *loop, int fd, unsigned int events, io_handler handler, void *args);
+int          ioloop_start(ioloop_t *loop);
+
+int set_nonblocking(int sockfd);
 
 
 #endif //KIME_IOLOOP_H

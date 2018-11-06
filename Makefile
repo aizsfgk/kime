@@ -123,6 +123,33 @@ kime/fast:
 	$(MAKE) -f CMakeFiles/kime.dir/build.make CMakeFiles/kime.dir/build
 .PHONY : kime/fast
 
+connection.o: connection.c.o
+
+.PHONY : connection.o
+
+# target to build an object file
+connection.c.o:
+	$(MAKE) -f CMakeFiles/kime.dir/build.make CMakeFiles/kime.dir/connection.c.o
+.PHONY : connection.c.o
+
+connection.i: connection.c.i
+
+.PHONY : connection.i
+
+# target to preprocess a source file
+connection.c.i:
+	$(MAKE) -f CMakeFiles/kime.dir/build.make CMakeFiles/kime.dir/connection.c.i
+.PHONY : connection.c.i
+
+connection.s: connection.c.s
+
+.PHONY : connection.s
+
+# target to generate assembly for a file
+connection.c.s:
+	$(MAKE) -f CMakeFiles/kime.dir/build.make CMakeFiles/kime.dir/connection.c.s
+.PHONY : connection.c.s
+
 dict.o: dict.c.o
 
 .PHONY : dict.o
@@ -375,6 +402,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... kime"
 	@echo "... edit_cache"
+	@echo "... connection.o"
+	@echo "... connection.i"
+	@echo "... connection.s"
 	@echo "... dict.o"
 	@echo "... dict.i"
 	@echo "... dict.s"
